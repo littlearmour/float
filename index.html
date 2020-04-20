@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      img {
+        max-width: 100%;
+      }
+      header {
+        background: #ccc;
+      }
+      .logo {
+        background: #ccc;
+        float: left;
+        margin-left: 50px;
+        margin-top: 8px;
+      }
+      .logo img {
+        height: 26px;
+        vertical-align: top;
+      }
+      .nav {
+        float: left;
+        margin-left: 50px;
+      }
+      .nav li {
+        float: left;
+        line-height: 32px;
+        padding: 4px 0.5em;
+      }
+      ul {
+        display: inline-block;
+      }
+      .content {
+        width: 800px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      aside {
+        width: 200px;
+        height: 300px;
+        background: #000;
+        float: left;
+      }
+      main {
+        width: 500px;
+        height: 300px;
+        background: #999;
+        float: left;
+      }
+      .ad {
+        width: 100px;
+        height: 300px;
+        background: #ccc;
+        float: left;
+      }
+      .imagelist {
+        /* border: 1px solid red; */
+        width: 800px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .imagelist .image {
+        width: 191px;
+        height: 191px;
+        background: #000;
+        float: left;
+        margin-right: 12px;
+        margin-bottom: 10px;
+      }
+      .imagelist .x {
+        margin-right: -12px;
+      }
+      footer {
+        height: 50px;
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <img
+          src="https://static.xiedaimala.com/xdml/cdn/assets/black-logo-25c84e68b3770b75580e7dbba2b77ce68f7fc1794d35afac32057c2d4ea4c498.png"
+          alt=""
+        />
+      </div>
+      <ul class="nav">
+        <li><a href="#">前端</a></li>
+        <li><a href="#">前端培训</a></li>
+        <li><a href="#">Java培训</a></li>
+        <li><a href="#">关于</a></li>
+      </ul>
+    </header>
+    <div class="content clearfix">
+      <aside></aside>
+      <main></main>
+      <div class="ad"></div>
+    </div>
+    <div class="imagelist clearfix">
+      <div class="x clearfix">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
